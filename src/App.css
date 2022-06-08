@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+ 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.container {
+  background: url("./img/Schermafbeelding\ 2022-06-08\ 100427.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+}
+
+header {
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+main {
+  display: flex;
+  margin: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+ul {
+  padding:0
+}
+label {
+  padding: 5px;
+}
+
+form {
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: center;
+  height: 40px;
+}
+
+h2 {
+  color:#fff;
+  text-align: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+.listItem, .titles {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+  font-size: 1.2rem;
+  list-style: none;
+  border: solid rgb(0, 0, 0) 1px;
+  margin-bottom: 5px;
+  box-shadow: -2px 2px 6px;
+}
+
+.titles {
+  height: 40px;
+  background-color: #282c34;
+  border-radius: 10px 10px 0 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.titleItem {
+  display: flex;
+  justify-content: left;
+  color:#fff;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color:#282c34;
+  width: 25%;
+  margin: 5px;
+}
+
+.underBar{
+  height: 20px;
+  list-style: none;
+  background-color:#282c34;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: -2px 2px 8px;
+}
+
+button {
+  background-color: #0d2657c5;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 15px;
+  width: 130px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.songProp {
+  display: flex;
+  justify-content: left;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  width: 25%;
+  margin: 5px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
