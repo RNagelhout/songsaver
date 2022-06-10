@@ -1,6 +1,5 @@
 .App {
   text-align: center;
- 
 }
 
 .App-logo {
@@ -16,6 +15,7 @@
 .container {
   background: url("./img/Schermafbeelding\ 2022-06-08\ 100427.jpg");
   background-repeat: no-repeat;
+  background-position:center;
   background-size:cover;
   height: 100vh;
 }
@@ -34,7 +34,33 @@ header {
   color: #61dafb;
 }
 
+.sortBlock {
+  color: #fff;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  justify-items: center;
+  background-color:#282c34;
+  border-radius: 10px 10px 0 0;
+}
 
+.sort-btnBlock{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 40%;
+  
+}
+
+.sort-btn {
+ display: block;
+ width: 35px;
+ height: 35px;
+ padding: 3px;
+ border: solid rgba(0, 0, 0, 0.473) 1px;
+}
+  
 main {
   display: flex;
   margin: 5%;
@@ -42,7 +68,8 @@ main {
   justify-content: center;
 }
 ul {
-  padding:0
+  padding:0;
+  margin: 0;
 }
 label {
   padding: 5px;
@@ -51,11 +78,12 @@ label {
 form {
   color: #fff;
   margin: 10px;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   display: flex;
   font-size: 1.1rem;
   justify-content: center;
-  height: 40px;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 h2 {
@@ -64,7 +92,6 @@ h2 {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-
 
 
 .listItem, .titles {
@@ -83,7 +110,7 @@ h2 {
 .titles {
   height: 40px;
   background-color: #282c34;
-  border-radius: 10px 10px 0 0;
+  border-top: none;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -98,24 +125,48 @@ h2 {
   margin: 5px;
 }
 
+.trashcan{
+  width: 20px;
+  height: auto;
+  padding-right: 20px;
+  border-radius: 50%;
+  background: url(./img/trash\ icon1.png);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+.trashcan:hover {
+  border: solid #282c34 1px;
+}
+
 .underBar{
   height: 20px;
   list-style: none;
+  text-align: center;
   background-color:#282c34;
   border-radius: 0px 0px 10px 10px;
   box-shadow: -2px 2px 8px;
 }
 
+.underBarTitle{
+  font-size: 0.8rem;
+  color: #fff;
+}
+
 button {
-  background-color: #0d2657c5;
+  background-color:#4e5564dc;
   text-transform: uppercase;
   color: #fff;
   border-radius: 15px;
   width: 130px;
   height: 50px;
   margin-left: 10px;
+  
 }
-
+button:hover {
+  background-color: #a2a4aadc;;
+}
 .songProp {
   display: flex;
   justify-content: left;
