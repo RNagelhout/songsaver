@@ -1,17 +1,22 @@
-import ListItem from "./ListItem"
 
 function List(props) {
 
-    const listComponents = props.songList.map(song => {
-        return(
-            <ListItem  artist={song.artist} title={song.title} genre={song.genre} rating={song.rating} />
-        )})
+    const ListItems = props.listSongs.map(song => {
 
-        return(
-            <ul>
-                {listComponents}
-            </ul>
-        )
+        return <li key={song.id} className="listItem">
+                <p className="songProp">{song.artist}</p>
+                <p className="songProp">{song.title}</p>
+                <p className="songProp">{song.genre}</p>
+                <p className="songProp">{song.rating}</p>
+                <button className='trashcan'></button>
+              </li>})
+    return (
+        <ul>
+             <div className='titles'><p className='titleItem'>Artist</p><p className='titleItem'>Title</p><p className='titleItem'>Genre</p><p className='titleItem'>Rating</p> </div>
+            {ListItems}
+            <div className='underBar'><p className="underBarTitle"> *2022* Nailwood Company</p> </div>
+        </ul>
+    )
 }
 
 export default List
