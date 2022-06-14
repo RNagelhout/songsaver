@@ -95,9 +95,9 @@ h2 {
   margin-bottom: 0px;
 }
 
-
 .listItem, .titles {
   background-color: #ffffff;
+  min-height: 28px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -129,17 +129,18 @@ h2 {
 
 .trashcan{
   width: 20px;
-  height: auto;
+  height: 30px;
   padding-right: 20px;
   border-radius: 50%;
   background: url(./img/trash\ icon1.png);
   background-repeat: no-repeat;
   background-position:center;
   background-size:cover;
+  margin: 5px;
 }
 
 .trashcan:hover {
-  border: solid #282c34 1px;
+  border: solid #c21313 2px;
 }
 
 .underBar{
@@ -164,11 +165,11 @@ button {
   width: 130px;
   height: 50px;
   margin-left: 10px;
-  
 }
 button:hover {
   background-color: #a2a4aadc;;
 }
+
 .songProp {
   display: flex;
   justify-content: left;

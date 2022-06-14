@@ -26,7 +26,6 @@ function SongForm(props) {
         e.preventDefault()
         const song = {id: uuidv4(),artist, title, genre, rating }
         props.addSong(song)
-        console.log(song)
       }
     return (
         <div>
