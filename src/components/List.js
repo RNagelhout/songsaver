@@ -12,12 +12,12 @@ function List(props) {
               </li>})
     return (
         <ul>
-             <div className='titles'>
+             {/* <div className='titles'>
                 <p className='titleItem'>Artist</p>
                 <p className='titleItem'>Title</p>
                 <p className='titleItem'>Genre</p>
                 <p className='titleItem'>Rating</p> 
-            </div>
+            </div> */}
             {ListItems}
             <div className='underBar'>
                 <p className="underBarTitle"> *2022* Nailwood Company</p> 
