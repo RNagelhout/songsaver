@@ -103,6 +103,12 @@ h2 {
   margin-bottom: 0px;
 }
 
+.genreList-block {
+  display: flex;
+  justify-content: center;
+
+}
+
 .listItem, .titles {
   background-color: #ffffff;
   min-height: 28px;

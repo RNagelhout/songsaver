@@ -38,7 +38,7 @@ function SongForm(props) {
                 </label>
                 <label>Genre: 
                     <select onChange={UpdateArtist} type="text" name="genre" >   
-                    <option value="Select genre...">Select...</option> 
+                    <option value="Select">Select...</option> 
                     <option value="Pop">Pop</option> 
                     <option value="Rock">Rock</option> 
                     <option value="Trance">Trance</option> 

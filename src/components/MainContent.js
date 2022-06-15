@@ -2,10 +2,12 @@ import {useState} from "react"
 import SongForm from "./SongForm";
 import List from "./List";
 import SortOptions from "./SortBlock";
+import GenreLists from "./GenreLists";
 
 
 function MainContent() {
     const [listSongs, setListSongs] = useState([])
+    const [FilteredList, setFilteredList] = useState([])
     
     function addSong(song) {
       const newList = [...listSongs]
@@ -83,13 +85,27 @@ function MainContent() {
         return setListSongs(temp)
       }
     }
+
+    function FilteredGenreList(e){
+      e.preventDefault()
+      const targetId = e.target.id
+      let FilteredList 
+      if (targetId === "all"){
+        FilteredList = listSongs
+      } else if (targetId === "Pop" || "Rock" || "Punk" || "Select" || "Trance" || "Soul") {
+        FilteredList = listSongs.filter(song => song.genre === targetId)
+      } else FilteredList = listSongs
+      setFilteredList(FilteredList)  
+    }
+    
       
     return(
         <main>
             <SongForm addSong={addSong} />
             <h2>Your Favorite Songs!</h2>
-            <SortOptions listSongs={listSongs} sortListGenre={sortListGenre} sortListArtist={sortListArtist} sortListTitle={sortListTitle} sortListRating={sortListRating}/>
-            <List listSongs={listSongs} handleDelete={handleDelete}/>
+            <GenreLists FilteredGenreList={FilteredGenreList}/>
+            <SortOptions listSongs={listSongs} FilteredList={FilteredList} sortListGenre={sortListGenre} sortListArtist={sortListArtist} sortListTitle={sortListTitle} sortListRating={sortListRating}/>
+            <List listSongs={listSongs} FilteredList={FilteredList} handleDelete={handleDelete} />
         </main>
     )
 
